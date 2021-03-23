@@ -37,7 +37,6 @@ const Cart = (): JSX.Element => {
       productId: product.id,
       amount: product.amount + 1,
     };
-    console.log(productAmount);
     updateProductAmount(productAmount);
   }
 
@@ -47,7 +46,6 @@ const Cart = (): JSX.Element => {
       productId: product.id,
       amount: product.amount - 1,
     };
-    console.log(productAmount);
     updateProductAmount(productAmount);
   }
 

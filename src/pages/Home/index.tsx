@@ -39,12 +39,6 @@ const Home = (): JSX.Element => {
   }, []);
 
   async function handleAddProduct(id: number) {
-    // const qtdaStock = await api.get(`/stock/${product.id}`);
-    // //
-    // if (product.amount >= qtdaStock.data.amount) {
-    //   toast.error("Quantidade solicitada fora de estoque");
-    //   return;
-    // }
     addProduct(id);
   }
 
