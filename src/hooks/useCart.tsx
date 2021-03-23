@@ -61,7 +61,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
       } else {
         const qtdaStock = await api.get(`/stock/${productId}`);
         //
-        if (findProduct.amount <= qtdaStock.data.amount) {
+        if (findProduct.amount < qtdaStock.data.amount) {
           const updateProducts = cart.map((product) => {
             if (product.id === findProduct.id) {
               return {
